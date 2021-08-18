@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.container {
+  background-image: url(./images/bg1.jpg);
+  background-repeat: repeat;
+  /* height: 100vh; */
+  /* font-family: "Permanent Marker", cursive; */
+  /* font-family: "Acme", sans-serif; */
+  /* font-family: "Architects Daughter", cursive; */
+  font-family: "Merienda", cursive;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.element1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 125px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.type {
+  background-color: #008277;
+  color: #ffd5ac;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.veg {
+  border-color: #008378;
+  color: #008378;
+  border-width: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.nveg {
+  border-color: #ea0032;
+  color: #ea0032;
+  border-width: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chili {
+  color: #ea0032;
+}
+
+.title {
+  background-color: #008277;
+  color: #ffd5ac;
+  border-radius: 40px;
+}
+
+.food-item {
+  margin: 0.1rem;
+  padding: 0.5rem;
+  border: #ea0032;
+  border-width: 2px;
+  border-radius: 20px;
+}
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #008277;
+}
+
+.out {
+  background-color: gray;
 }

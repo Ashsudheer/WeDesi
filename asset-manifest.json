@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/WeDesi/static/css/main.7e4349f9.chunk.css",
+    "main.js": "/WeDesi/static/js/main.0e67fefe.chunk.js",
+    "main.js.map": "/WeDesi/static/js/main.0e67fefe.chunk.js.map",
+    "runtime-main.js": "/WeDesi/static/js/runtime-main.d53ad19f.js",
+    "runtime-main.js.map": "/WeDesi/static/js/runtime-main.d53ad19f.js.map",
+    "static/js/2.5e68447c.chunk.js": "/WeDesi/static/js/2.5e68447c.chunk.js",
+    "static/js/2.5e68447c.chunk.js.map": "/WeDesi/static/js/2.5e68447c.chunk.js.map",
+    "index.html": "/WeDesi/index.html",
+    "static/css/main.7e4349f9.chunk.css.map": "/WeDesi/static/css/main.7e4349f9.chunk.css.map",
+    "static/js/2.5e68447c.chunk.js.LICENSE.txt": "/WeDesi/static/js/2.5e68447c.chunk.js.LICENSE.txt",
+    "static/media/Logo.e933f3fb.png": "/WeDesi/static/media/Logo.e933f3fb.png",
+    "static/media/bg-elem3.32bd16f5.png": "/WeDesi/static/media/bg-elem3.32bd16f5.png",
+    "static/media/App.css": "/WeDesi/static/media/bg1.85dbfec7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d53ad19f.js",
+    "static/js/2.5e68447c.chunk.js",
+    "static/css/main.7e4349f9.chunk.css",
+    "static/js/main.0e67fefe.chunk.js"
+  ]
+}

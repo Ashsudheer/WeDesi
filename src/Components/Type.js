@@ -51,7 +51,7 @@ function Type(props) {
   const Dis = () => {
     if (props.veg && count === 0) return null;
     return (
-      <div className="flex flex-col mx-2 my-2">
+      <div id={props.type} className="flex flex-col mx-2 my-2">
         <div
           className="flex flex-row type py-1 px-2 font-semibold"
           onClick={toggle}

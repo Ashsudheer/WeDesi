@@ -60,3 +60,24 @@ input:checked ~ .dot {
 .out {
   background-color: gray;
 }
+
+.browse {
+  position: relative;
+}
+
+.menu {
+  background-color: #2d3142;
+  color: #ffd5ac;
+}
+
+.menu-item {
+  background-color: #916953;
+  color: #ffd5ac;
+  position: absolute;
+  top: 42px;
+}
+
+.bord {
+  border-color: #ffd5ac;
+  border-width: 2px 0 0 0;
+}

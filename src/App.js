@@ -4,17 +4,19 @@ import Papa from "papaparse";
 import logo from "./images/Logo.png";
 import img1 from "./images/bg-elem3.png";
 import Type from "./Components/Type";
+import { Link } from "react-scroll";
 
 function App() {
   // const [data, setData] = useState([]);
   const [sort, setSort] = useState({});
   const [types, setTypes] = useState([]);
   const [veg, setVeg] = useState(false);
+  const [menu, setMenu] = useState(false);
   var sorted = {};
 
   const toggle = () => {
     setVeg(!veg);
-    console.log(veg);
+    // console.log(veg);
   };
 
   // useEffect(() => {
@@ -45,6 +47,54 @@ function App() {
       }
     );
   }, []);
+
+  const Menu = () => {
+    var out = [];
+    for (var i = 0, max = types.length; i < max; i++) {
+      if (i === 0) {
+        out.push(
+          <div className="my-2 ">
+            <Link
+              to="start"
+              spy={true}
+              smooth={true}
+              onClick={() => setMenu(!menu)}
+            >
+              {types[i]}
+            </Link>
+          </div>
+        );
+      } else {
+        out.push(
+          <div className="my-2 border-t bord">
+            <Link
+              to={types[i - 1]}
+              spy={true}
+              smooth={true}
+              onClick={() => setMenu(!menu)}
+            >
+              {types[i]}
+            </Link>
+          </div>
+        );
+      }
+    }
+    return (
+      <div className="flex flex-col browse mx-auto my-2 w-1/2  text-center">
+        <div
+          onClick={() => setMenu(!menu)}
+          className="px-4 py-2 text-normal menu font-bold rounded-full"
+        >
+          Browse Menu
+        </div>
+        {menu && (
+          <div className="text-normal font-bold menu-item rounded-lg p-1">
+            {out}
+          </div>
+        )}
+      </div>
+    );
+  };
 
   const Display = () => {
     var out = [];
@@ -80,11 +130,16 @@ function App() {
               onClick={toggle}
             ></div>
           </div>
-          <div className="ml-3 font-bold" style={{ color: "#008277" }}>
+          <div
+            id="start"
+            className="ml-3 font-bold"
+            style={{ color: "#008277" }}
+          >
             Veg
           </div>
         </label>
       </div>
+      <Menu />
       <Display />
     </div>
   );

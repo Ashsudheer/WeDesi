@@ -4,7 +4,7 @@ import "../App.css";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 
 function Type(props) {
-  const [display, setDisplay] = useState(false);
+  const [display, setDisplay] = useState(true);
   const [items, setItems] = useState([]);
   const [count, setCount] = useState(0);
 
@@ -51,21 +51,27 @@ function Type(props) {
   const Dis = () => {
     if (props.veg && count === 0) return null;
     return (
-      <div id={props.type} className="flex flex-col mx-2 my-2">
+      <div id={props.type} className="flex flex-col mx-2 mt-5">
         <div
           className="flex flex-row type py-1 px-2 font-semibold"
           onClick={toggle}
         >
-          <div className="text-lg">{props.type}</div>
-          {!display && (
-            <IoIosArrowDropdownCircle className="ml-auto my-auto text-xl" />
-          )}
-          {display && (
-            <IoIosArrowDropdownCircle
-              className="ml-auto my-auto text-xl"
-              style={{ transform: "rotate(180deg)" }}
-            />
-          )}
+          <div className="">
+            <h1>{props.type}</h1>
+          </div>
+          <div className="ml-auto">
+            {!display && (
+              <IoIosArrowDropdownCircle className="icon ml-auto my-auto" />
+            )}
+            {display && (
+              <IoIosArrowDropdownCircle
+                className="icon ml-auto my-auto"
+                style={{
+                  transform: "rotate(180deg)",
+                }}
+              />
+            )}
+          </div>
         </div>
         <Content />
       </div>

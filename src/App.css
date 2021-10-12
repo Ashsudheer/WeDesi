@@ -1,25 +1,68 @@
 .container {
-  background-image: url(./images/bg1.jpg);
-  background-repeat: repeat;
+  /* background-image: url(./images/bg1.jpg); */
+  /* background-repeat: repeat; */
+  background-color: #202020;
   /* height: 100vh; */
   /* font-family: "Permanent Marker", cursive; */
   /* font-family: "Acme", sans-serif; */
   /* font-family: "Architects Daughter", cursive; */
   font-family: "Merienda", cursive;
-  position: relative;
+  overflow: visible !important;
+  overflow-y: visible !important;
 }
 
 .element1 {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 125px;
+  top: -20px;
+  right: -20px;
+  height: 175px;
+}
+
+.element2 {
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  height: 200px;
+}
+
+.element3 {
+  position: absolute;
+  top: 80vh;
+  right: -75px;
+  height: 200px;
+}
+
+.element4 {
+  position: absolute;
+  top: 70vh;
+  left: 10px;
+  height: 150px;
+}
+
+.element5 {
+  position: absolute;
+  top: 60vh;
+  right: -75px;
+  height: 200px;
 }
 
 .type {
-  background-color: #008277;
-  color: #ffd5ac;
+  /* background-color: #008277; */
+  /* color: #ffd5ac; */
+  color: #ff7948;
   border-radius: 10px;
+}
+
+.type h1 {
+  /* font-family: "Dosis", sans-serif; */
+  letter-spacing: 3px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ffc56a;
+  font-size: 28px;
+}
+
+#start {
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .veg {
@@ -39,30 +82,52 @@
 }
 
 .title {
-  background-color: #008277;
-  color: #ffd5ac;
-  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  margin: auto 2rem;
+}
+
+.title h1 {
+  font-size: 60px;
+  font-family: "Fredoka One", cursive;
+}
+
+.title h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 25px;
+}
+
+#hindi {
+  /* font-family: "Laila", sans-serif; */
+  font-family: "Eczar", serif;
 }
 
 .food-item {
-  margin: 0.1rem;
-  padding: 0.5rem;
-  border: #ea0032;
-  border-width: 2px;
-  border-radius: 20px;
+  font-family: "Varela Round", sans-serif;
+  color: cornsilk;
+  font-size: 20px;
+  margin: 5px auto;
+  padding-left: 0.5rem;
 }
 
 input:checked ~ .dot {
   transform: translateX(100%);
-  background-color: #008277;
+  background-color: #008378;
+}
+
+input ~ .dot {
+  background-color: #d11100;
 }
 
 .out {
-  background-color: gray;
+  background-color: cornsilk;
 }
 
 .browse {
-  position: relative;
+  color: #ffd5ac;
+  position: fixed;
+  top: 90vh;
+  left: 80vw;
 }
 
 .menu {
@@ -80,4 +145,114 @@ input:checked ~ .dot {
 .bord {
   border-color: #ffd5ac;
   border-width: 2px 0 0 0;
+}
+
+.icon {
+  font-size: 28px;
+}
+
+.head {
+  font-size: 34px;
+  color: #ffd5ac;
+  font-family: "Fredoka One", cursive;
+  letter-spacing: 5px;
+}
+
+.container1 {
+  position: absolute;
+  width: 100%;
+  bottom: 0vh;
+  /* height: 100%; */
+  /* background-color: #c9d6df; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+}
+
+.field h1 {
+  font-family: "Varela Round", sans-serif;
+  color: #ffc56a;
+  font-weight: 600;
+}
+
+.scroll {
+  width: 60px;
+  height: 60px;
+  /* border: 1px solid #ffd5ac; */
+  border-radius: 50%;
+  position: relative;
+  animation: down 1.5s infinite;
+  -webkit-animation: down 1.5s infinite;
+  /* &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: rotate(-45deg);
+  } */
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    height: 40px;
+  }
+  30% {
+    height: 70px;
+  }
+  60% {
+    height: 40px;
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    height: 40px;
+  }
+  30% {
+    height: 70px;
+  }
+  60% {
+    height: 40px;
+  }
+}
+
+.icon-scroll {
+  color: #ffd5ac;
+  font-size: 36px;
 }

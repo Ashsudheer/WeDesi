@@ -13,6 +13,8 @@
   top: 40px;
   right: -30px;
   height: 175px;
+  animation: spin 75s linear infinite;
+  -webkit-animation: spin 75s linear infinite;
 }
 
 .element2 {
@@ -20,6 +22,8 @@
   top: -50px;
   left: -50px;
   height: 200px;
+  animation: spin 75s linear infinite;
+  -webkit-animation: spin 75s linear infinite;
 }
 
 .element3 {
@@ -34,6 +38,8 @@
   top: 65vh;
   left: -10px;
   height: 225px;
+  animation: spin 75s linear infinite;
+  -webkit-animation: spin 75s linear infinite;
 }
 
 .element5 {
@@ -41,6 +47,8 @@
   top: 60vh;
   right: -50px;
   height: 175px;
+  animation: spin 75s linear infinite;
+  -webkit-animation: spin 75s linear infinite;
 }
 
 .type {
@@ -87,6 +95,9 @@
 .title h1 {
   font-size: 60px;
   font-family: "Fredoka One", cursive;
+  animation: fadeIn ease 3s;
+  /* animation-iteration-count: 1; */
+  /* animation-fill-mode: forwards; */
 }
 
 .title h2 {
@@ -94,11 +105,17 @@
   font-size: 20px;
   margin-top: 1rem;
   width: 80%;
+  animation: fadeIn ease 6s;
+  /* animation-iteration-count: 1; */
+  /* animation-fill-mode: forwards; */
 }
 
 .title h3 {
   font-family: "Varela Round", sans-serif;
   margin-top: 1rem;
+  animation: fadeIn ease 9s;
+  /* animation-iteration-count: 1; */
+  /* animation-fill-mode: forwards; */
 }
 
 .call {
@@ -277,4 +294,40 @@ input ~ .dot {
 .icon-scroll {
   color: #ffd5ac;
   font-size: 36px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

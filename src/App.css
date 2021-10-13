@@ -1,26 +1,23 @@
 .container {
   /* background-image: url(./images/bg1.jpg); */
   /* background-repeat: repeat; */
+  width: 100%;
   background-color: #202020;
-  /* height: 100vh; */
-  /* font-family: "Permanent Marker", cursive; */
-  /* font-family: "Acme", sans-serif; */
-  /* font-family: "Architects Daughter", cursive; */
   font-family: "Merienda", cursive;
-  overflow: visible !important;
-  overflow-y: visible !important;
+  overflow: hidden !important;
+  position: absolute;
 }
 
 .element1 {
   position: absolute;
-  top: -20px;
-  right: -20px;
+  top: 40px;
+  right: -30px;
   height: 175px;
 }
 
 .element2 {
   position: absolute;
-  top: 50px;
+  top: -50px;
   left: -50px;
   height: 200px;
 }
@@ -29,21 +26,21 @@
   position: absolute;
   top: 80vh;
   right: -75px;
-  height: 200px;
+  height: 250px;
 }
 
 .element4 {
   position: absolute;
-  top: 70vh;
-  left: 10px;
-  height: 150px;
+  top: 65vh;
+  left: -10px;
+  height: 225px;
 }
 
 .element5 {
   position: absolute;
   top: 60vh;
-  right: -75px;
-  height: 200px;
+  right: -50px;
+  height: 175px;
 }
 
 .type {
@@ -94,11 +91,36 @@
 
 .title h2 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
+  margin-top: 1rem;
+  width: 80%;
+}
+
+.title h3 {
+  font-family: "Varela Round", sans-serif;
+  margin-top: 1rem;
+}
+
+.call {
+  background-color: #ff7948;
+  border-radius: 50%;
+  font-size: 18px;
+  color: cornsilk;
+  position: absolute;
+  left: 20%;
+  top: 10vh;
+  z-index: 25;
+}
+
+#english {
+  display: inline;
 }
 
 #hindi {
   /* font-family: "Laila", sans-serif; */
+  padding-left: 5px;
+  font-size: 70px;
+  display: inline-block;
   font-family: "Eczar", serif;
 }
 

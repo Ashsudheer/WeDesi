@@ -108,30 +108,57 @@ function App() {
 
   return (
     <div>
-      <div className="overflow-visible container flex flex-col">
-        <img className="element1 object-contain z-10" src={img1} alt="" />
+      <div className="container flex flex-col">
+        <img className="element1 object-contain z-10 " src={img1} alt="" />
         <img className="element2 object-contain z-10" src={img2} alt="" />
         {/* <img className="element3 object-contain z-10" src={img2} alt="" /> */}
         <img className="element4 object-contain z-10" src={img2} alt="" />
         <img className="element5 object-contain z-10" src={img3} alt="" />
         <div className="container flex flex-col" style={{ height: "100vh" }}>
           <div className="title z-20">
-            <h1 style={{ color: "#ffc56a" }}>WE</h1>
-            <h1 id="hindi" style={{ marginTop: "5px", color: "#ff7948" }}>
-              देसी
+            <div>
+              <h1
+                id="english"
+                style={{ color: "#ffc56a", lineHeight: "60px", height: "60px" }}
+              >
+                WE
+              </h1>
+              <h1
+                id="hindi"
+                style={{
+                  color: "#ff7948",
+                  lineHeight: "70px",
+                  height: "70px",
+                }}
+              >
+                देसी
+              </h1>
+            </div>
+            <h1
+              style={{ color: "#d11100", lineHeight: "60px", height: "60px" }}
+            >
+              DHABA
             </h1>
-            <h1 style={{ color: "#d11100" }}>DHABA</h1>
-            <h2 style={{ color: "cornsilk" }}>&bull; Kannur &bull;</h2>
+            <h2 style={{ color: "cornsilk" }}>
+              &bull; <em>Flavours from the Highways of the North</em> &bull;
+            </h2>
+            <h3 style={{ color: "cornsilk" }}>
+              Mill Road, Burnassery
+              <br />
+              Kannur,Kerala 670001
+            </h3>
+            <h3 style={{ color: "cornsilk" }}>Phone: +91 80751 68864</h3>
           </div>
+
           <div class="container1 object-contain">
-            <div class="field">
+            <div class="field z-10">
               <div class="scroll">
                 <IoIosArrowDropdownCircle className="icon-scroll m-auto" />
               </div>
             </div>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex z-10" style={{ marginTop: "100vh" }}>
           <h1 className="head m-auto my-5">MENU</h1>
         </div>
         <div className="flex ml-auto mr-2">
@@ -141,7 +168,7 @@ function App() {
               className="mr-3 font-bold"
               style={{ color: "#ffc56a" }}
             >
-              Veg
+              Non-Veg
             </div> */}
             <div className="relative">
               <input type="checkbox" id="toggleB" className="sr-only" />

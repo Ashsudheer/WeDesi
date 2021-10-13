@@ -15,8 +15,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: visible !important;
-  overflow-y: visible !important;
+  /* overflow: hidden !important; */
+  overflow-x: hidden !important;
 }
 
 code {

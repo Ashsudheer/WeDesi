@@ -200,7 +200,7 @@ input ~ .dot {
 .container1 {
   position: absolute;
   width: 100%;
-  bottom: 0vh;
+  bottom: 1rem;
   /* height: 100%; */
   /* background-color: #c9d6df; */
   display: flex;
@@ -329,5 +329,57 @@ input ~ .dot {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .title h1 {
+    font-size: 65px;
+  }
+
+  .title h2 {
+    font-size: 25px;
+    width: 85%;
+  }
+
+  .title h3 {
+    font-size: 20px;
+  }
+
+  .call {
+    font-size: 20px;
+  }
+
+  #hindi {
+    font-size: 75px;
+  }
+  .element1 {
+    top: 40px;
+    right: -30px;
+    height: 185px;
+  }
+
+  .element2 {
+    top: -50px;
+    left: -50px;
+    height: 215px;
+  }
+
+  .element3 {
+    top: 80vh;
+    right: -75px;
+    height: 250px;
+  }
+
+  .element4 {
+    top: 65vh;
+    left: -10px;
+    height: 240px;
+  }
+
+  .element5 {
+    top: 60vh;
+    right: -50px;
+    height: 190px;
   }
 }

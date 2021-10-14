@@ -28,7 +28,7 @@ function App() {
     for (var i = 0, max = types.length; i < max; i++) {
       if (i === 0) {
         out.push(
-          <div className="my-2 ">
+          <div className="">
             <Link
               to="start"
               spy={true}
@@ -41,9 +41,9 @@ function App() {
         );
       } else {
         out.push(
-          <div className="my-2 border-t bord">
+          <div className="border-t bord">
             <Link
-              to={types[i - 1]}
+              to={types[i]}
               spy={true}
               smooth={true}
               onClick={() => setMenu(!menu)}
@@ -56,11 +56,7 @@ function App() {
     }
     return (
       <div className="flex flex-col browse mx-auto object-contain">
-        {menu && (
-          <div className="text-normal font-bold menu-item rounded-lg p-1">
-            {out}
-          </div>
-        )}
+        {menu && <div className="menu-item rounded-lg px-2">{out}</div>}
         <div
           onClick={() => setMenu(!menu)}
           className="px-5 py-3 text-normal menu font-bold rounded-full"
@@ -190,7 +186,7 @@ function App() {
             </div>
           </label>
         </div>
-        {/* <Menu className="z-30" /> */}
+        <Menu className="z-30" />
         <div class="list">
           <Display />
         </div>

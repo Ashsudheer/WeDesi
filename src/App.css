@@ -175,15 +175,24 @@ input ~ .dot {
 }
 
 .menu-item {
-  background-color: #916953;
+  background-color: #2d3142;
   color: #ffd5ac;
   position: absolute;
-  top: 42px;
+  bottom: 42px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  right: 0.5rem;
+  width: 40vw;
+}
+
+.menu-item div {
+  margin-top: 2px;
 }
 
 .bord {
   border-color: #ffd5ac;
-  border-width: 2px 0 0 0;
+  border-width: 0.5px 0 0 0;
+  padding-top: 2px;
 }
 
 .icon {

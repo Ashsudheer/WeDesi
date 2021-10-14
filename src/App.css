@@ -382,4 +382,8 @@ input ~ .dot {
     right: -50px;
     height: 190px;
   }
+
+  .container1 {
+    bottom: 1.5rem;
+  }
 }
